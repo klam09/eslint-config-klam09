@@ -16,19 +16,6 @@ module.exports = {
         functions: 'never',
       },
     ],
-    indent: ['error', 2],
-    'max-len': [
-      'error',
-      120,
-      2,
-      {
-        ignoreUrls: true,
-        ignoreComments: true,
-        ignoreRegExpLiterals: true,
-        ignoreStrings: true,
-        ignoreTemplateLiterals: true,
-      },
-    ],
     'no-console': 'off', // console to be removed by terser-webpack-plugin
     'no-underscore-dangle': 'off',
     // import
