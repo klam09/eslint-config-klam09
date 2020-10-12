@@ -1,5 +1,5 @@
 module.exports = {
-  extends: 'airbnb',
+  extends: ['airbnb', 'prettier', 'prettier/react'],
   env: {
     browser: true,
     es6: true,
@@ -16,19 +16,6 @@ module.exports = {
         functions: 'never',
       },
     ],
-    indent: ['error', 2],
-    'max-len': [
-      'error',
-      120,
-      2,
-      {
-        ignoreUrls: true,
-        ignoreComments: true,
-        ignoreRegExpLiterals: true,
-        ignoreStrings: true,
-        ignoreTemplateLiterals: true,
-      },
-    ],
     'no-console': 'off', // console to be removed by terser-webpack-plugin
     // import
     'import/no-unresolved': 'off', // ignore webpack alias
@@ -37,9 +24,6 @@ module.exports = {
     'promise/always-return': 'error',
     'promise/catch-or-return': 'error',
     'promise/no-native': 'off',
-    // react
-    'react/jsx-indent-props': ['error', 2],
-    'react/jsx-indent': ['error', 2],
     // prettier
     'prettier/prettier': 'error',
   },
